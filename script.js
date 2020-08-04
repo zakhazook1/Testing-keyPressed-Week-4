@@ -56,7 +56,9 @@ function keyReleased() {
 	}
 }
 
+//save for paddle movements in pong game
 
+/*
 function movepaddles(){
   paddleLTop = paddleLeftY - paddleH/2, 
  paddleLB = paddleLeftY + paddleH/2, 
@@ -74,8 +76,49 @@ function movepaddles(){
 	} else if (keyIsDown(76) && (paddleRB < canvasH)) {
 		paddleRightY += paddleVel;
 }
+*/
+//save for left paddles in pong game
+/*
+function keyPressed() {
+	switch(keyCode) {
+		case 37:
+		case 65:
+			lxspeed = -2;
+			break;
+		case 39:
+		case 68:
+			lxspeed = 2;
+			break;
+		case 38:
+		case 87:
+			lyspeed = -2;
+			break;
+		case 40:
+		case 83:
+			lyspeed = 2;
+			break;
+	}
+}
 
-paddleLTop = paddleLeftY - paddleH/2, 
-paddleLB   = paddleLeftY + paddleH/2, 
-paddleRTop = paddleRightY - paddleH/2, 
-paddleRB   = paddleRightY + paddleH/2;
+//save for left paddles in pong game
+function keyReleased() {
+	switch(keyCode) {
+		case 37:
+		case 65:
+			lxspeed = 0;
+			break;
+		case 39:
+		case 68:
+			lxspeed = 0;
+			break;
+		case 38:
+		case 87:
+			lyspeed = 0;
+			break;
+		case 40:
+		case 83:
+			lyspeed = 0;
+			break;
+	}
+}
+*/
